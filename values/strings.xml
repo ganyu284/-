@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, AndroideEggTableBorderActivity!
+	</string>
+	<string name="app_name">音乐播放器</string>
+	<string name="label1">欢迎</string>
+	<string name="label2">Android</string>
+	<string name="label3"></string>
+	<string name="labelurl"></string>
+</resources>

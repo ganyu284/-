@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="lyrics_entries">
+        <item>从不下载</item>
+        <item>只使用WIFI下载</item>
+        <item>总是下载</item>
+    </string-array>
+    <string-array name="lyrics_values">
+        <item>Never</item>
+        <item>Wifi</item>
+        <item>Always</item>
+    </string-array>
+    <string-array name="shake_entries">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="shake_values">
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+
+</resources>

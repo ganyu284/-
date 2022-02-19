@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="播放器设置" >
+
+    <PreferenceCategory
+        android:key="showlyrics"
+        android:title="歌词显示设置" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="show_lyrics"
+            android:summary="在屏幕上显示歌词"
+            android:summaryOff="不显示歌词"
+            android:summaryOn="显示歌词"
+            android:title="显示歌词" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:dependency="show_lyrics"
+        android:key="downloadlyrics"
+        android:title="歌词下载设置" >
+
+        <!-- 注意不要设置DialogTitle等相关的值，否则出不来 -->
+
+        <ListPreference
+            android:defaultValue="Wifi"
+            android:entries="@array/lyrics_entries"
+            android:entryValues="@array/lyrics_values"
+            android:key="dlLyrics"
+            android:negativeButtonText="取消"
+            android:summary="下载歌词的方式"
+            android:title="歌词下载方式" android:dependency="show_lyrics"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="shake_mobile"
+        android:title="晃动手机播放下一首" >
+
+        <CheckBoxPreference
+            android:disableDependentsState="false"
+            android:key="shake_next"
+            android:summaryOff="关闭"
+            android:summaryOn="打开"
+            android:title="晃动手机播放下一首" />
+
+        <ListPreference
+            android:defaultValue="300"
+            android:dependency="shake_next"
+            android:entries="@array/shake_entries"
+            android:entryValues="@array/shake_values"
+            android:key="shake_strength"
+            android:negativeButtonText="取消"
+            android:shouldDisableView="true"
+            android:title="晃动播放灵敏度" android:summary="播放器对晃动的反应的灵敏度"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
