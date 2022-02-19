@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:orientation="horizontal">
+	<ImageView android:background="#00000000" android:src="@drawable/folders_music"
+		android:scaleType="centerCrop" android:id="@+id/image"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:layout_width="59dip" android:layout_height="60dip" />	
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="10dip" android:layout_height="fill_parent"
+		android:orientation="vertical" android:gravity="center_vertical">
+		<TextView android:id="@+id/ContentTitle" android:paddingTop="1dip"
+			android:singleLine="true" android:textSize="20dip" android:ellipsize="end"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		<TextView android:id="@+id/ContentArtist" android:textSize="15dip"
+			android:textColor="#aabbcc" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

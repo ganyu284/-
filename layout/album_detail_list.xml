@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:id="@+id/albumdetailView" android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/linearLayout21"
+		android:background="@drawable/tab_indicator" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:padding="5dip">
+		<Button android:id="@+id/imageButton21" android:text="专辑"
+			android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+			android:background="@drawable/left" android:paddingLeft="15dip"
+			android:paddingRight="5dip" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:onClick="back_to_album" />
+
+		<Button android:id="@+id/imageButton22" android:text="正在播放"
+			android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+			android:background="@drawable/right" android:paddingRight="15dip"
+			android:paddingLeft="5dip" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:onClick="now_playing">
+		</Button>
+	</RelativeLayout>
+	<TextView android:layout_height="1px" android:layout_width="fill_parent"
+		android:background="#FFFFFF" android:layout_below="@id/linearLayout21"
+		android:id="@+id/divider2" />
+	<!-- 专辑信息 -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout221" android:layout_height="wrap_content"
+		android:gravity="center_vertical" android:layout_below="@id/divider2">
+		<ImageView android:src="@drawable/folders_music"
+			android:layout_width="65dip" android:id="@+id/imageView1"
+			android:scaleType="centerCrop" android:layout_height="70dip"></ImageView>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:gravity="center" android:paddingLeft="10dip"
+			android:orientation="vertical" android:id="@+id/linearLayout2"
+			android:layout_height="wrap_content">
+			<TextView android:layout_width="fill_parent"
+				android:layout_gravity="center" android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_height="wrap_content" android:id="@+id/textView1"
+				android:text="TextView"></TextView>
+			<TextView android:layout_width="fill_parent"
+				android:layout_gravity="center" android:textAppearance="?android:attr/textAppearanceLarge"
+				android:singleLine="true" android:ellipsize="end"
+				android:layout_height="wrap_content" android:id="@+id/textView2"
+				android:text="TextView"></TextView>
+			<TextView android:layout_width="fill_parent"
+				android:layout_gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_height="wrap_content" android:id="@+id/textView3"
+				android:text="TextView"></TextView>
+		</LinearLayout>
+
+	</LinearLayout>
+	<TextView android:layout_height="1px" android:layout_width="fill_parent"
+		android:background="#FFFFFF" android:layout_below="@id/linearLayout221"
+		android:id="@+id/divider3" />
+	<ListView android:layout_width="match_parent" android:id="@+id/listView21"
+		android:layout_below="@id/divider3" android:layout_height="wrap_content"></ListView>
+
+
+</RelativeLayout>
